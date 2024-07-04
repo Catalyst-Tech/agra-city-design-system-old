@@ -175,10 +175,10 @@ Use these semantic variables to style components.
 --light-color-warning-link: var(--color-neutral-800);
 --light-color-warning-border: var(--color-yellow-200);
 
---light-color-error-dim-background: var(--color-red-500);
---light-color-error-dim-text: var(--color-red-600);
---light-color-error-dim-link: var(--color-neutral-800);
---light-color-error-dim-border: var(--color-red-200);
+--light-color-error-background: var(--color-red-500);
+--light-color-error-text: var(--color-red-600);
+--light-color-error-link: var(--color-neutral-800);
+--light-color-error-border: var(--color-red-200);
 
 
 /* Dark Theme */
@@ -230,10 +230,10 @@ Use these semantic variables to style components.
 --dark-color-warning-link: var(--color-neutral-50);
 --dark-color-warning-border: var(--color-yellow-300);
 
---dark-color-error-dim-background: var(--color-red-500);
---dark-color-error-dim-text: var(--color-red-300);
---dark-color-error-dim-link: var(--color-neutral-50);
---dark-color-error-dim-border: var(--color-red-300);
+--dark-color-error-background: var(--color-red-500);
+--dark-color-error-text: var(--color-red-300);
+--dark-color-error-link: var(--color-neutral-50);
+--dark-color-error-border: var(--color-red-300);
 
 /* Set default theme */
 /* ✅ Use these tokens to style components */
@@ -284,10 +284,10 @@ Use these semantic variables to style components.
 --color-warning-link: var(--light-color-warning-link);
 --color-warning-border: var(--light-color-warning-border);
 
---color-error-dim-background: var(--light-color-error-dim-background);
---color-error-dim-text: var(--light-color-error-dim-text);
---color-error-dim-link: var(--light-color-error-dim-link);
---color-error-dim-border: var(--light-color-error-dim-border);
+--color-error-background: var(--light-color-error-background);
+--color-error-text: var(--light-color-error-text);
+--color-error-link: var(--light-color-error-link);
+--color-error-border: var(--light-color-error-border);
 
 
 @media (prefers-color-scheme: dark) {
@@ -341,10 +341,10 @@ Use these semantic variables to style components.
     --color-warning-link: var(--dark-color-warning-link);
     --color-warning-border: var(--dark-color-warning-border);
 
-    --color-error-dim-background: var(--dark-color-error-dim-background);
-    --color-error-dim-text: var(--dark-color-error-dim-text);
-    --color-error-dim-link: var(--dark-color-error-dim-link);
-    --color-error-dim-border: var(--dark-color-error-dim-border);
+    --color-error-background: var(--dark-color-error-background);
+    --color-error-text: var(--dark-color-error-text);
+    --color-error-link: var(--dark-color-error-link);
+    --color-error-border: var(--dark-color-error-border);
   }
 }
 ```
