@@ -80,6 +80,8 @@ These variables act as building blocks, making it easier to maintain and update 
 --color-red-700: #690400;
 --color-red-800: #3E0200;
 
+/* ✅ Primitives below this line are okay to use directly */
+
 /* Font primitives */
 --font-size-50: 14px;
 --font-size-100: 16px;
@@ -101,6 +103,13 @@ These variables act as building blocks, making it easier to maintain and update 
 --space-800: 64px;
 --space-900: 96px;
 --space-1000: 128px;
+
+/* Radius size primitives */
+--radius-100: 2px;
+--radius-100: 4px;
+--radius-200: 8px;
+--radius-300: 12px;
+--radius-400: 16px;
 ```
 
 ## Semantic Variables
@@ -118,6 +127,7 @@ Use these semantic variables to style components.
 /* [theme]-color-[concept]-[variant?]-[property]-[variant?]  */
 
 /* Light theme */
+/* 🚫 Don't use these tokens directly */
 --light-color-primary-background: var(--color-blue-500);
 --light-color-primary-text: var(--color-neutral-50);
 --light-color-primary-link: var(--color-neutral-50);
@@ -172,6 +182,7 @@ Use these semantic variables to style components.
 
 
 /* Dark Theme */
+/* 🚫 Don't use these tokens directly */
 --dark-color-primary-background: var(--color-green-300);
 --dark-color-primary-text: var(--color-neutral-800);
 --dark-color-primary-link: var(--color-neutral-50);
@@ -225,6 +236,7 @@ Use these semantic variables to style components.
 --dark-color-error-dim-border: var(--color-red-300);
 
 /* Set default theme */
+/* ✅ Use these tokens to style components */
 --color-primary-background: var(--light-color-primary-background);
 --color-primary-text: var(--light-color-primary-text);
 --color-primary-link: var(--light-color-primary-link);
