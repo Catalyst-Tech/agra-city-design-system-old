@@ -1,24 +1,31 @@
 # agra-city-design-system
 ## CSS
 
+### Naming Convention Hierarchy & Legend
+1. `theme`: Light / Dark.
+2. `component`: Button, Card, Chip, etc.
+3. `category`: Color, Font, Space, Radius, etc.
+4. `property`: Actual CSS properties, e.g. Background, Size, Weight, etc.
+5. `variant`: Primary, Secondary, Neutral, etc.
+6. `state`: Hover, Active, Disabled, etc.
+7. `scale`: 100, 200, 300, etc.
+
+💡 Not all variables names must include all of the above. Each design token list will mention a naming convention pattern that makes sense within its context.
+
 ###  Primitives Variables
+Primitives in CSS refer to low-level design tokens that represent fundamental values like colors, spacing, typography, etc. These are the raw, unprocessed values used throughout the design system.
+
+These variables act as building blocks, making it easier to maintain and update the styles consistently across the project.
+
+🚫 AVOID using color primitives directly to style components. Color primitives are used to drive the *Semantic Variables*. Use the semantic variables to style components.
+
+💡 While using `blue` as a variant name is generally not recommended, these are primitive tokens that can be bound to a specific color. This is why you shouldn't use these directly in your design.
+#### Design Tokens
 ```css
-/*
+/* Primitive variables */
 
-Primitives in CSS refer to low-level design tokens that
-represent fundamental values like colors, spacing,
-typography, etc. They are the raw, unprocessed
-values used throughout your styles.
-
-These variables act as building blocks, making it
-easier to maintain and update your styles 
-consistently across a project.
-
-AVOID using these to style components.
-Primitives are used to drive the Semantic Variables.
-Use the semantic variables to style components.
-
-*/
+/* Naming convention  */
+/* --[category]-[variant]-[scale]  */
 
 --color-blue-100: #C9EDFF;
 --color-blue-200: #92CEFF;
@@ -51,58 +58,71 @@ Use the semantic variables to style components.
 ```
 
 ### Semantic Variables
-```css
-/*
+Semantic CSS variables are higher-level variables that map to primitives, providing meaningful names that reflect their use in the UI context. They enhance readability and maintainability by abstracting away the underlying values.
 
-Semantic CSS variables are higher-level variables that
-map to primitives, providing meaningful names that reflect
-their use in the UI context. They enhance readability and
-maintainability by abstracting away the underlying values.
-
-Using semantic variables helps in understanding the
-purpose of a style at a glance and makes it easier to
-make global changes based on the UI's needs
+Using semantic variables helps in understanding the purpose of a style at a glance and makes it easier to make global changes based on the UI's needs
 
 Use these semantic variables to style components.
+#### Design Tokens
+```css
+/* Semantic variables */
 
-*/
-
-/* Background colors */
+/* Colors */
 /* Naming convention  */
-/* color-[optional adjective]-background-[name]-[light/dark]  */
---color-background-brand-1-light: var(--color-blue-500);
---color-background-brand-2-light: var(--color-green-300);
---color-background-default-1-light: var(--color-neutral-50);
---color-background-default-2-light: var(--color-neutral-100);
---color-background-inverse-1-light: var(--color-neutral-800);
---color-background-inverse-2-light: var(--color-neutral-700);
+/* [theme]-color-background-[background-variant]-[category?]-[variant?]  */
+--light-color-background-brand-1: var(--color-blue-500);
+--light-color-background-brand-1-text: var(--color-blue-500);
+--light-color-background-brand-1-text-dim: var(--color-blue-500);
+--light-color-background-brand-1-link: var(--color-blue-500);
+--light-color-background-brand-1-border: var(--color-blue-500);
 
-/* Text colors */
-/* Naming convention  */
-/* color-[optional adjective]-text-on-[background name]-[light/dark]  */
---color-text-on-brand-1-light: var(--color-blue-500);
---color-dim-text-on-brand-1-light: var(--color-blue-500);
---color-link-text-on-brand-1-light: var(--color-blue-500);
+--light-color-background-brand-2: var(--color-blue-500);
+--light-color-background-brand-2-text: var(--color-blue-500);
+--light-color-background-brand-2-text-dim: var(--color-blue-500);
+--light-color-background-brand-2-link: var(--color-blue-500);
+--light-color-background-brand-2-border: var(--color-blue-500);
 
---color-text-on-brand-2-light: var(--color-green-300);
---color-dim-text-on-brand-2-light: var(--color-green-300);
---color-link-text-on-brand-2-light: var(--color-green-300);
+--light-color-background-default: var(--color-blue-500);
+--light-color-background-default-text: var(--color-blue-500);
+--light-color-background-default-text-dim: var(--color-blue-500);
+--light-color-background-default-link: var(--color-blue-500);
+--light-color-background-default-border: var(--color-blue-500);
 
---color-text-on-default-1-light: var(--color-neutral-50);
---color-dim-text-on-default-1-light: var(--color-neutral-50);
---color-link-text-on-default-1-light: var(--color-neutral-50);
+--light-color-background-default-dim: var(--color-blue-500);
+--light-color-background-default-dim-text: var(--color-blue-500);
+--light-color-background-default-dim-link: var(--color-blue-500);
+--light-color-background-default-dim-border: var(--color-blue-500);
 
---color-text-on-default-2-light: var(--color-neutral-100);
---color-dim-text-on-default-2-light: var(--color-neutral-100);
---color-link-text-on-default-2-light: var(--color-neutral-100);
+--light-color-background-inverse: var(--color-blue-500);
+--light-color-background-inverse-text: var(--color-blue-500);
+--light-color-background-inverse-text-dim: var(--color-blue-500);
+--light-color-background-inverse-link: var(--color-blue-500);
+--light-color-background-inverse-border: var(--color-blue-500);
 
---color-text-on-inverse-1-light: var(--color-neutral-800);
---color-dim-text-on-inverse-1-light: var(--color-neutral-800);
---color-link-text-on-inverse-1-light: var(--color-neutral-800);
+--light-color-background-inverse-dim: var(--color-blue-500);
+--light-color-background-inverse-dim-text: var(--color-blue-500);
+--light-color-background-inverse-dim-link: var(--color-blue-500);
+--light-color-background-inverse-dim-border: var(--color-blue-500);
 
---color-text-on-inverse-2-light: var(--color-neutral-800);
---color-dim-text-on-inverse-2-light: var(--color-neutral-800);
---color-link-text-on-inverse-2-light: var(--color-neutral-800);
+--light-color-background-info: var(--color-blue-500);
+--light-color-background-info-text: var(--color-blue-500);
+--light-color-background-info-link: var(--color-blue-500);
+--light-color-background-info-border: var(--color-blue-500);
+
+--light-color-background-success: var(--color-blue-500);
+--light-color-background-success-text: var(--color-blue-500);
+--light-color-background-success-link: var(--color-blue-500);
+--light-color-background-success-border: var(--color-blue-500);
+
+--light-color-background-warning: var(--color-blue-500);
+--light-color-background-warning-text: var(--color-blue-500);
+--light-color-background-warning-link: var(--color-blue-500);
+--light-color-background-warning-border: var(--color-blue-500);
+
+--light-color-background-error-dim: var(--color-blue-500);
+--light-color-background-error-dim-text: var(--color-blue-500);
+--light-color-background-error-dim-link: var(--color-blue-500);
+--light-color-background-error-dim-border: var(--color-blue-500);
 ```
 
 ### Component Variables
@@ -112,16 +132,19 @@ These variables make it easy to customize and manage the look and feel of each c
 
 Use these component variables to style specific components.
 #### Naming Convention
-`color-[component]-[variant]-[object]-[optional state]-[light/dark]`
+
 #### Design Tokens
 ##### Buttons
 ```css
+/* Naming convention  */
+/* [theme]-button-[variant]  */
+
 /* Primary Button */
---color-button-primary-background-light: var(--color-blue-500);
---color-button-primary-background-hover-light: var(--color-blue-400);
---color-button-primary-background-active-light: var(--color-blue-500);
+--light-button-color-background-primary-: var(--color-blue-500);
+--light-button-color-background-primary-hover: var(--color-blue-400);
+--light-button-color-background-primary-active: var(--color-blue-500);
 /* Secondary Button */
---color-button-secondary-background-light: var(--color-green-300);
---color-button-secondary-background-hover-light: var(--color-green-200);
---color-button-secondary-background-active-light: var(--color-green-300);
+--light-button-color-background-secondary-: var(--color-green-300);
+--light-button-color-background-secondary-hover: var(--color-green-200);
+--light-button-color-background-secondary-active: var(--color-green-300);
 ```
