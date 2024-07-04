@@ -1,7 +1,6 @@
-# agra-city-design-system
-## CSS
+# AgraCity Design System
 
-### Naming Convention Hierarchy & Legend
+## Naming Convention Hierarchy & Legend
 1. `theme`: Light / Dark.
 2. `component`: Button, Card, Chip, etc.
 3. `category`: Color, Font, Space, Radius, etc.
@@ -12,21 +11,21 @@
 
 💡 Not all variables names must include all of the above. Each design token list will mention a naming convention pattern that makes sense within its context.
 
-###  Primitives Variables
+##  Primitives Variables
 Primitives in CSS refer to low-level design tokens that represent fundamental values like colors, spacing, typography, etc. These are the raw, unprocessed values used throughout the design system.
 
 These variables act as building blocks, making it easier to maintain and update the styles consistently across the project.
-
-🚫 AVOID using color primitives directly to style components. Color primitives are used to drive the *Semantic Variables*. Use the semantic variables to style components.
-
-💡 While using `blue` as a variant name is generally not recommended, these are primitive tokens that can be bound to a specific color. This is why you shouldn't use these directly in your design.
-#### Design Tokens
+### Design Tokens
 ```css
 /* Primitive variables */
 
 /* Naming convention  */
 /* --[category]-[variant]-[scale]  */
 
+/* Color primitives */
+/* 🚫 AVOID using color primitives directly to style components */
+
+/* Brand blues */
 --color-blue-100: #C9EDFF;
 --color-blue-200: #92CEFF;
 --color-blue-300: #56AFFC;
@@ -36,6 +35,7 @@ These variables act as building blocks, making it easier to maintain and update 
 --color-blue-700: #003870;
 --color-blue-800: #012039;
 
+/* Brand Greens */
 --color-green-50: #F0F8E8;
 --color-green-100: #DDF1C6;
 --color-green-200: #B0D87D;
@@ -46,6 +46,7 @@ These variables act as building blocks, making it easier to maintain and update 
 --color-green-700: #234000;
 --color-green-800: #152200;
 
+/* Neutrals */
 --color-neutral-50: #FFFFFF;
 --color-neutral-100: #E2E9F0;
 --color-neutral-200: #C0C9D2;
@@ -55,15 +56,59 @@ These variables act as building blocks, making it easier to maintain and update 
 --color-neutral-600: #48525B;
 --color-neutral-700: #2E3740;
 --color-neutral-800: #161E26;
+
+/* Warning */
+--color-warning-50: #FFF1CB;
+--color-warning-100: #FFE6A2;
+--color-warning-200: #F1C108;
+--color-warning-300: #CBA201;
+--color-warning-400: #A78502;
+--color-warning-500: #846802;
+--color-warning-600: #624D02;
+--color-warning-700: #423301;
+--color-warning-800: #251C00;
+
+/* Error */
+--color-error-50: #FFEDEA;
+--color-error-100: #FEE0DA;
+--color-error-200: #FFB0A3;
+--color-error-300: #FF7966;
+--color-error-400: #F13B29;
+--color-error-500: #CA0F01;
+--color-error-600: #980901;
+--color-error-700: #690400;
+--color-error-800: #3E0200;
+
+/* Font primitives */
+--font-size-50: 14px;
+--font-size-100: 16px;
+--font-size-200: 20px;
+--font-size-300: 25px;
+--font-size-400: 32px;
+--font-size-500: 40px;
+--font-size-600: 51px;
+
+/* space primitives */
+--space-50: 2px;
+--space-100: 4px;
+--space-200: 8px;
+--space-300: 12px;
+--space-400: 16px;
+--space-500: 20px;
+--space-600: 24px;
+--space-700: 32px;
+--space-800: 64px;
+--space-900: 96px;
+--space-1000: 128px;
 ```
 
-### Semantic Variables
+## Semantic Variables
 Semantic CSS variables are higher-level variables that map to primitives, providing meaningful names that reflect their use in the UI context. They enhance readability and maintainability by abstracting away the underlying values.
 
 Using semantic variables helps in understanding the purpose of a style at a glance and makes it easier to make global changes based on the UI's needs
 
 Use these semantic variables to style components.
-#### Design Tokens
+### Design Tokens
 ```css
 /* Semantic variables */
 
@@ -125,16 +170,16 @@ Use these semantic variables to style components.
 --light-color-background-error-dim-border: var(--color-blue-500);
 ```
 
-### Component Variables
+## Component Variables
 Component CSS variables are specific to individual UI components, encapsulating styles that are unique to that component.
 
 These variables make it easy to customize and manage the look and feel of each component independently, promoting reusability and consistency throughout the application.
 
 Use these component variables to style specific components.
-#### Naming Convention
+### Naming Convention
 
-#### Design Tokens
-##### Buttons
+### Design Tokens
+#### Buttons
 ```css
 /* Naming convention  */
 /* [theme]-button-[variant]  */
