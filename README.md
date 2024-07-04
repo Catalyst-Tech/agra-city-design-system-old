@@ -26,6 +26,7 @@ These variables act as building blocks, making it easier to maintain and update 
 /* 🚫 AVOID using color primitives directly to style components */
 
 /* Brand blues */
+--color-blue-50: #E3F5FE;
 --color-blue-100: #C9EDFF;
 --color-blue-200: #92CEFF;
 --color-blue-300: #56AFFC;
@@ -58,26 +59,26 @@ These variables act as building blocks, making it easier to maintain and update 
 --color-neutral-800: #161E26;
 
 /* Warning */
---color-warning-50: #FFF1CB;
---color-warning-100: #FFE6A2;
---color-warning-200: #F1C108;
---color-warning-300: #CBA201;
---color-warning-400: #A78502;
---color-warning-500: #846802;
---color-warning-600: #624D02;
---color-warning-700: #423301;
---color-warning-800: #251C00;
+--color-yellow-50: #FFF1CB;
+--color-yellow-100: #FFE6A2;
+--color-yellow-200: #E8C356;
+--color-yellow-300: #CBA201;
+--color-yellow-400: #A78502;
+--color-yellow-500: #846802;
+--color-yellow-600: #624D02;
+--color-yellow-700: #423301;
+--color-yellow-800: #251C00;
 
 /* Error */
---color-error-50: #FFEDEA;
---color-error-100: #FEE0DA;
---color-error-200: #FFB0A3;
---color-error-300: #FF7966;
---color-error-400: #F13B29;
---color-error-500: #CA0F01;
---color-error-600: #980901;
---color-error-700: #690400;
---color-error-800: #3E0200;
+--color-red-50: #FFEDEA;
+--color-red-100: #FEE0DA;
+--color-red-200: #FFB0A3;
+--color-red-300: #FF7966;
+--color-red-400: #F13B29;
+--color-red-500: #CA0F01;
+--color-red-600: #980901;
+--color-red-700: #690400;
+--color-red-800: #3E0200;
 
 /* Font primitives */
 --font-size-50: 14px;
@@ -116,70 +117,76 @@ Use these semantic variables to style components.
 /* Naming convention  */
 /* [theme]-color-background-[background-variant]-[category?]-[variant?]  */
 --light-color-background-brand-1: var(--color-blue-500);
---light-color-background-brand-1-text: var(--color-blue-500);
---light-color-background-brand-1-text-dim: var(--color-blue-500);
---light-color-background-brand-1-link: var(--color-blue-500);
+--light-color-background-brand-1-text: var(--color-neutral-50);
+--light-color-background-brand-1-link: var(--color-neutral-50);
 --light-color-background-brand-1-border: var(--color-blue-500);
 
---light-color-background-brand-2: var(--color-blue-500);
---light-color-background-brand-2-text: var(--color-blue-500);
---light-color-background-brand-2-text-dim: var(--color-blue-500);
---light-color-background-brand-2-link: var(--color-blue-500);
---light-color-background-brand-2-border: var(--color-blue-500);
+--light-color-background-brand-2: var(--color-green-300);
+--light-color-background-brand-2-text: var(--color-neutral-800);
+--light-color-background-brand-2-link: var(--color-neutral-50);
+--light-color-background-brand-2-border: var(--color-green-300);
 
---light-color-background-default: var(--color-blue-500);
---light-color-background-default-text: var(--color-blue-500);
---light-color-background-default-text-dim: var(--color-blue-500);
+--light-color-background-default: var(--color-neutral-50);
+--light-color-background-default-text: var(--color-neutral-800);
+--light-color-background-default-text-dim: var(--color-neutral-600);
 --light-color-background-default-link: var(--color-blue-500);
---light-color-background-default-border: var(--color-blue-500);
+--light-color-background-default-border: var(--color-neutral-100);
 
---light-color-background-default-dim: var(--color-blue-500);
---light-color-background-default-dim-text: var(--color-blue-500);
---light-color-background-default-dim-link: var(--color-blue-500);
---light-color-background-default-dim-border: var(--color-blue-500);
+--light-color-background-default-dim: var(--color-neutral-100);
+--light-color-background-default-dim-text: var(--color-neutral-800);
+--light-color-background-default-dim-link: var(--color-neutral-600);
+--light-color-background-default-dim-border: var(--color-neutral-200);
 
---light-color-background-inverse: var(--color-blue-500);
---light-color-background-inverse-text: var(--color-blue-500);
---light-color-background-inverse-text-dim: var(--color-blue-500);
---light-color-background-inverse-link: var(--color-blue-500);
---light-color-background-inverse-border: var(--color-blue-500);
+--light-color-background-inverse: var(--color-neutral-800);
+--light-color-background-inverse-text: var(--color-neutral-50);
+--light-color-background-inverse-text-dim: var(--color-neutral-200);
+--light-color-background-inverse-link: var(--color-green-300);
+--light-color-background-inverse-border: var(--color-neutral-700);
 
---light-color-background-inverse-dim: var(--color-blue-500);
---light-color-background-inverse-dim-text: var(--color-blue-500);
---light-color-background-inverse-dim-link: var(--color-blue-500);
---light-color-background-inverse-dim-border: var(--color-blue-500);
+--light-color-background-inverse-dim: var(--color-neutral-700);
+--light-color-background-inverse-dim-text: var(--color-neutral-50);
+--light-color-background-inverse-dim-link: var(--color-green-300);
+--light-color-background-inverse-dim-border: var(--color-neutral-600);
 
---light-color-background-info: var(--color-blue-500);
---light-color-background-info-text: var(--color-blue-500);
---light-color-background-info-link: var(--color-blue-500);
---light-color-background-info-border: var(--color-blue-500);
+--light-color-background-info: var(--color-blue-50);
+--light-color-background-info-text: var(--color-blue-600);
+--light-color-background-info-link: var(--color-neutral-800);
+--light-color-background-info-border: var(--color-blue-200);
 
---light-color-background-success: var(--color-blue-500);
---light-color-background-success-text: var(--color-blue-500);
---light-color-background-success-link: var(--color-blue-500);
---light-color-background-success-border: var(--color-blue-500);
+--light-color-background-success: var(--color-green-50);
+--light-color-background-success-text: var(--color-green-600);
+--light-color-background-success-link: var(--color-neutral-800);
+--light-color-background-success-border: var(--color-green-200);
 
---light-color-background-warning: var(--color-blue-500);
---light-color-background-warning-text: var(--color-blue-500);
---light-color-background-warning-link: var(--color-blue-500);
---light-color-background-warning-border: var(--color-blue-500);
+--light-color-background-warning: var(--color-yellow-50);
+--light-color-background-warning-text: var(--color-warning-600);
+--light-color-background-warning-link: var(--color-neutral-800);
+--light-color-background-warning-border: var(--color-yellow-200);
 
---light-color-background-error-dim: var(--color-blue-500);
---light-color-background-error-dim-text: var(--color-blue-500);
---light-color-background-error-dim-link: var(--color-blue-500);
---light-color-background-error-dim-border: var(--color-blue-500);
+--light-color-background-error-dim: var(--color-red-500);
+--light-color-background-error-dim-text: var(--color-red-600);
+--light-color-background-error-dim-link: var(--color-neutral-800);
+--light-color-background-error-dim-border: var(--color-red-200);
+
+
+/* Set default as light theme */
+
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    color-scheme: dark;
+    /* Set alternative styles for dark theme */
+  }
+}
 ```
 
-## Component Variables
+## Component Specific Styles
 Component CSS variables are specific to individual UI components, encapsulating styles that are unique to that component.
 
 These variables make it easy to customize and manage the look and feel of each component independently, promoting reusability and consistency throughout the application.
 
 Use these component variables to style specific components.
-### Naming Convention
-
-### Design Tokens
-#### Buttons
+### Buttons
 ```css
 /* Naming convention  */
 /* [theme]-button-[variant]  */
