@@ -115,67 +115,224 @@ Use these semantic variables to style components.
 
 /* Colors */
 /* Naming convention  */
-/* [theme]-color-background-[background-variant]-[category?]-[variant?]  */
---light-color-background-brand-1: var(--color-blue-500);
---light-color-background-brand-1-text: var(--color-neutral-50);
---light-color-background-brand-1-link: var(--color-neutral-50);
---light-color-background-brand-1-border: var(--color-blue-500);
+/* [theme]-color-[concept]-[variant?]-[property]-[variant?]  */
 
---light-color-background-brand-2: var(--color-green-300);
---light-color-background-brand-2-text: var(--color-neutral-800);
---light-color-background-brand-2-link: var(--color-neutral-50);
---light-color-background-brand-2-border: var(--color-green-300);
+/* Light theme */
+--light-color-primary-background: var(--color-blue-500);
+--light-color-primary-text: var(--color-neutral-50);
+--light-color-primary-link: var(--color-neutral-50);
+--light-color-primary-border: var(--color-blue-500);
 
---light-color-background-default: var(--color-neutral-50);
---light-color-background-default-text: var(--color-neutral-800);
---light-color-background-default-text-dim: var(--color-neutral-600);
---light-color-background-default-link: var(--color-blue-500);
---light-color-background-default-border: var(--color-neutral-100);
+--light-color-secondary-background: var(--color-green-300);
+--light-color-secondary-text: var(--color-neutral-800);
+--light-color-secondary-link: var(--color-neutral-50);
+--light-color-secondary-border: var(--color-green-300);
 
---light-color-background-default-dim: var(--color-neutral-100);
---light-color-background-default-dim-text: var(--color-neutral-800);
---light-color-background-default-dim-link: var(--color-neutral-600);
---light-color-background-default-dim-border: var(--color-neutral-200);
+--light-color-default-background: var(--color-neutral-50);
+--light-color-default-text: var(--color-neutral-800);
+--light-color-default-text-dim: var(--color-neutral-600);
+--light-color-default-link: var(--color-blue-500);
+--light-color-default-border: var(--color-neutral-200);
 
---light-color-background-inverse: var(--color-neutral-800);
---light-color-background-inverse-text: var(--color-neutral-50);
---light-color-background-inverse-text-dim: var(--color-neutral-200);
---light-color-background-inverse-link: var(--color-green-300);
---light-color-background-inverse-border: var(--color-neutral-700);
+--light-color-default-dim-background: var(--color-neutral-100);
+--light-color-default-dim-text: var(--color-neutral-800);
+--light-color-default-dim-link: var(--color-neutral-600);
+--light-color-default-dim-border: var(--color-neutral-300);
 
---light-color-background-inverse-dim: var(--color-neutral-700);
---light-color-background-inverse-dim-text: var(--color-neutral-50);
---light-color-background-inverse-dim-link: var(--color-green-300);
---light-color-background-inverse-dim-border: var(--color-neutral-600);
+--light-color-inverse-background: var(--color-neutral-800);
+--light-color-inverse-text: var(--color-neutral-50);
+--light-color-inverse-text-dim: var(--color-neutral-200);
+--light-color-inverse-link: var(--color-green-300);
+--light-color-inverse-border: var(--color-neutral-600);
 
---light-color-background-info: var(--color-blue-50);
---light-color-background-info-text: var(--color-blue-600);
---light-color-background-info-link: var(--color-neutral-800);
---light-color-background-info-border: var(--color-blue-200);
+--light-color-inverse-dim-background: var(--color-neutral-700);
+--light-color-inverse-dim-text: var(--color-neutral-50);
+--light-color-inverse-dim-link: var(--color-green-300);
+--light-color-inverse-dim-border: var(--color-neutral-500);
 
---light-color-background-success: var(--color-green-50);
---light-color-background-success-text: var(--color-green-600);
---light-color-background-success-link: var(--color-neutral-800);
---light-color-background-success-border: var(--color-green-200);
+--light-color-info-background: var(--color-blue-50);
+--light-color-info-text: var(--color-blue-600);
+--light-color-info-link: var(--color-neutral-800);
+--light-color-info-border: var(--color-blue-200);
 
---light-color-background-warning: var(--color-yellow-50);
---light-color-background-warning-text: var(--color-warning-600);
---light-color-background-warning-link: var(--color-neutral-800);
---light-color-background-warning-border: var(--color-yellow-200);
+--light-color-success-background: var(--color-green-50);
+--light-color-success-text: var(--color-green-600);
+--light-color-success-link: var(--color-neutral-800);
+--light-color-success-border: var(--color-green-200);
 
---light-color-background-error-dim: var(--color-red-500);
---light-color-background-error-dim-text: var(--color-red-600);
---light-color-background-error-dim-link: var(--color-neutral-800);
---light-color-background-error-dim-border: var(--color-red-200);
+--light-color-warning-background: var(--color-yellow-50);
+--light-color-warning-text: var(--color-warning-600);
+--light-color-warning-link: var(--color-neutral-800);
+--light-color-warning-border: var(--color-yellow-200);
+
+--light-color-error-dim-background: var(--color-red-500);
+--light-color-error-dim-text: var(--color-red-600);
+--light-color-error-dim-link: var(--color-neutral-800);
+--light-color-error-dim-border: var(--color-red-200);
 
 
-/* Set default as light theme */
+/* Dark Theme */
+--dark-color-primary-background: var(--color-green-300);
+--dark-color-primary-text: var(--color-neutral-800);
+--dark-color-primary-link: var(--color-neutral-50);
+--dark-color-primary-border: var(--color-green-300);
+
+--dark-color-secondary-background: var(--color-blue-500);
+--dark-color-secondary-text: var(--color-neutral-50);
+--dark-color-secondary-link: var(--color-neutral-50);
+--dark-color-secondary-border: var(--color-blue-500);
+
+--dark-color-default-background: var(--color-neutral-800);
+--dark-color-default-text: var(--color-neutral-50);
+--dark-color-default-text-dim: var(--color-neutral-200);
+--dark-color-default-link: var(--color-green-300);
+--dark-color-default-border: var(--color-neutral-600);
+
+--dark-color-default-dim-background: var(--color-neutral-700);
+--dark-color-default-dim-text: var(--color-neutral-50);
+--dark-color-default-dim-link: var(--color-green-300);
+--dark-color-default-dim-border: var(--color-neutral-500);
+
+--dark-color-inverse-background: var(--color-neutral-50);
+--dark-color-inverse-text: var(--color-neutral-800);
+--dark-color-inverse-text-dim: var(--color-neutral-600);
+--dark-color-inverse-link: var(--color-blue-500);
+--dark-color-inverse-border: var(--color-neutral-200);
+
+--dark-color-inverse-dim-background: var(--color-neutral-100);
+--dark-color-inverse-dim-text: var(--color-neutral-50);
+--dark-color-inverse-dim-link: var(--color-green-300);
+--dark-color-inverse-dim-border: var(--color-neutral-300);
+
+--dark-color-info-background: var(--color-neutral-800);
+--dark-color-info-text: var(--color-blue-300);
+--dark-color-info-link: var(--color-neutral-50);
+--dark-color-info-border: var(--color-blue-300);
+
+--dark-color-success-background: var(--color-green-50);
+--dark-color-success-text: var(--color-green-300);
+--dark-color-success-link: var(--color-neutral-50);
+--dark-color-success-border: var(--color-green-300);
+
+--dark-color-warning-background: var(--color-yellow-50);
+--dark-color-warning-text: var(--color-warning-300);
+--dark-color-warning-link: var(--color-neutral-50);
+--dark-color-warning-border: var(--color-yellow-300);
+
+--dark-color-error-dim-background: var(--color-red-500);
+--dark-color-error-dim-text: var(--color-red-300);
+--dark-color-error-dim-link: var(--color-neutral-50);
+--dark-color-error-dim-border: var(--color-red-300);
+
+/* Set default theme */
+--color-primary-background: var(--light-color-primary-background);
+--color-primary-text: var(--light-color-primary-text);
+--color-primary-link: var(--light-color-primary-link);
+--color-primary-border: var(--light-color-primary-border);
+
+--color-secondary-background: var(--light-color-secondary-background);
+--color-secondary-text: var(--light-color-secondary-text);
+--color-secondary-link: var(--light-color-secondary-link);
+--color-secondary-border: var(--light-color-secondary-border);
+
+--color-default-background: var(--light-color-default-background);
+--color-default-text: var(--light-color-default-text);
+--color-default-text-dim: var(--light-color-default-text-dim);
+--color-default-link: var(--light-color-default-link);
+--color-default-border: var(--light-color-default-border);
+
+--color-default-dim-background: var(--light-color-default-dim-background);
+--color-default-dim-text: var(--light-color-default-dim-text);
+--color-default-dim-link: var(--light-color-default-dim-link);
+--color-default-dim-border: var(--light-color-default-dim-border);
+
+--color-inverse-background: var(--light-color-inverse-background);
+--color-inverse-text: var(--light-color-inverse-text);
+--color-inverse-text-dim: var(--light-color-inverse-text-dim);
+--color-inverse-link: var(--light-color-inverse-link);
+--color-inverse-border: var(--light-color-inverse-border);
+
+--color-inverse-dim-background: var(--light-color-inverse-dim-background);
+--color-inverse-dim-text: var(--light-color-inverse-dim-text);
+--color-inverse-dim-link: var(--light-color-inverse-dim-link);
+--color-inverse-dim-border: var(--light-color-inverse-dim-border);
+
+--color-info-background: var(--light-color-info-background);
+--color-info-text: var(--light-color-info-text);
+--color-info-link: var(--light-color-info-link);
+--color-info-border: var(--light-color-info-border);
+
+--color-success-background: var(--light-color-success-background);
+--color-success-text: var(--light-color-success-text);
+--color-success-link: var(--light-color-success-link);
+--color-success-border: var(--light-color-success-border);
+
+--color-warning-background: var(--light-color-warning-background);
+--color-warning-text: var(--light-color-warning-text);
+--color-warning-link: var(--light-color-warning-link);
+--color-warning-border: var(--light-color-warning-border);
+
+--color-error-dim-background: var(--light-color-error-dim-background);
+--color-error-dim-text: var(--light-color-error-dim-text);
+--color-error-dim-link: var(--light-color-error-dim-link);
+--color-error-dim-border: var(--light-color-error-dim-border);
 
 
 @media (prefers-color-scheme: dark) {
   :root {
     color-scheme: dark;
     /* Set alternative styles for dark theme */
+    --color-primary-background: var(--dark-color-primary-background);
+    --color-primary-text: var(--dark-color-primary-text);
+    --color-primary-link: var(--dark-color-primary-link);
+    --color-primary-border: var(--dark-color-primary-border);
+
+    --color-secondary-background: var(--dark-color-secondary-background);
+    --color-secondary-text: var(--dark-color-secondary-text);
+    --color-secondary-link: var(--dark-color-secondary-link);
+    --color-secondary-border: var(--dark-color-secondary-border);
+
+    --color-default-background: var(--dark-color-default-background);
+    --color-default-text: var(--dark-color-default-text);
+    --color-default-text-dim: var(--dark-color-default-text-dim);
+    --color-default-link: var(--dark-color-default-link);
+    --color-default-border: var(--dark-color-default-border);
+
+    --color-default-dim-background: var(--dark-color-default-dim-background);
+    --color-default-dim-text: var(--dark-color-default-dim-text);
+    --color-default-dim-link: var(--dark-color-default-dim-link);
+    --color-default-dim-border: var(--dark-color-default-dim-border);
+
+    --color-inverse-background: var(--dark-color-inverse-background);
+    --color-inverse-text: var(--dark-color-inverse-text);
+    --color-inverse-text-dim: var(--dark-color-inverse-text-dim);
+    --color-inverse-link: var(--dark-color-inverse-link);
+    --color-inverse-border: var(--dark-color-inverse-border);
+
+    --color-inverse-dim-background: var(--dark-color-inverse-dim-background);
+    --color-inverse-dim-text: var(--dark-color-inverse-dim-text);
+    --color-inverse-dim-link: var(--dark-color-inverse-dim-link);
+    --color-inverse-dim-border: var(--dark-color-inverse-dim-border);
+
+    --color-info-background: var(--dark-color-info-background);
+    --color-info-text: var(--dark-color-info-text);
+    --color-info-link: var(--dark-color-info-link);
+    --color-info-border: var(--dark-color-info-border);
+
+    --color-success-background: var(--dark-color-success-background);
+    --color-success-text: var(--dark-color-success-text);
+    --color-success-link: var(--dark-color-success-link);
+    --color-success-border: var(--dark-color-success-border);
+
+    --color-warning-background: var(--dark-color-warning-background);
+    --color-warning-text: var(--dark-color-warning-text);
+    --color-warning-link: var(--dark-color-warning-link);
+    --color-warning-border: var(--dark-color-warning-border);
+
+    --color-error-dim-background: var(--dark-color-error-dim-background);
+    --color-error-dim-text: var(--dark-color-error-dim-text);
+    --color-error-dim-link: var(--dark-color-error-dim-link);
+    --color-error-dim-border: var(--dark-color-error-dim-border);
   }
 }
 ```
