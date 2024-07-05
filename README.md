@@ -175,7 +175,7 @@ Use these semantic variables to style components.
 --light-color-warning-link: var(--color-neutral-800);
 --light-color-warning-border: var(--color-yellow-200);
 
---light-color-error-background: var(--color-red-500);
+--light-color-error-background: var(--color-red-50);
 --light-color-error-text: var(--color-red-600);
 --light-color-error-link: var(--color-neutral-800);
 --light-color-error-border: var(--color-red-200);
@@ -230,7 +230,7 @@ Use these semantic variables to style components.
 --dark-color-warning-link: var(--color-neutral-50);
 --dark-color-warning-border: var(--color-yellow-300);
 
---dark-color-error-background: var(--color-red-500);
+--dark-color-error-background: var(--color-red-50);
 --dark-color-error-text: var(--color-red-300);
 --dark-color-error-link: var(--color-neutral-50);
 --dark-color-error-border: var(--color-red-300);
