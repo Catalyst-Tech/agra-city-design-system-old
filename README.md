@@ -215,7 +215,7 @@ Use these semantic variables to style components.
 --dark-color-inverse-dim-link: var(--color-green-300);
 --dark-color-inverse-dim-border: var(--color-neutral-300);
 
---dark-color-info-background: var(--color-neutral-800);
+--dark-color-info-background: var(--color-neutral-50);
 --dark-color-info-text: var(--color-blue-300);
 --dark-color-info-link: var(--color-neutral-50);
 --dark-color-info-border: var(--color-blue-300);
